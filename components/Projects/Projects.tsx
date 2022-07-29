@@ -101,7 +101,7 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="/projects/phi-min.png"
+                            src="https://cloud.geethg.com/code.png"
                             alt="phi"
                             boxSize="100%"
                             maxW="500px"
