@@ -101,7 +101,7 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="/projects/phi.png"
+                            src="/projects/phi-min.png"
                             alt="phi"
                             boxSize="100%"
                             maxW="500px"
@@ -156,7 +156,7 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="/projects/ilb.png"
+                            src="/projects/ilb-min.png"
                             alt="phi"
                             boxSize="100%"
                             maxW="500px"
@@ -210,7 +210,7 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="/projects/myp.png"
+                            src="/projects/myp-min.png"
                             alt="phi"
                             boxSize="100%"
                             maxW="500px"
@@ -264,7 +264,7 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="/projects/hsc.png"
+                            src="/projects/hsc-min.png"
                             alt="phi"
                             boxSize="100%"
                             maxW="500px"
@@ -318,7 +318,7 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="/projects/pal.png"
+                            src="/projects/pal-min.png"
                             alt="pal"
                             boxSize="100%"
                             maxW="500px"
@@ -372,7 +372,7 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="/projects/cfy.png"
+                            src="/projects/cfy-min.png"
                             alt="cfy"
                             boxSize="100%"
                             maxW="500px"
