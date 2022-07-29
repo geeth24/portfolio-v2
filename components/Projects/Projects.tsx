@@ -214,6 +214,8 @@ function Projects() {
                             alt="phi"
                             width="100%"
                             maxW="500px"
+                            objectFit="contain"
+                            objectPosition="center"
                         />
                         <Box
                             display={panchangaIsVisible ? "block" : "none"}
