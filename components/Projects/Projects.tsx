@@ -72,6 +72,7 @@ function Projects() {
             margin="0 auto"
             id="projects"
             maxW="5xl"
+            width="100%"
             pb={10}
         >
             <Flex align="flex-start" justify="center" direction="column" p={5}>
