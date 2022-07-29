@@ -101,9 +101,9 @@ function Projects() {
                         position="relative"
                     >
                         <Image
-                            src="https://cloud.geethg.com/code.png"
+                            src="/projects/phi-min.png"
                             alt="phi"
-                            boxSize="100%"
+                            boxSize="300px"
                             maxW="500px"
                         />
                         <Box
@@ -158,7 +158,7 @@ function Projects() {
                         <Image
                             src="/projects/ilb-min.png"
                             alt="phi"
-                            boxSize="100%"
+                            boxSize="300px"
                             maxW="500px"
                         />
                         <Box
@@ -212,7 +212,7 @@ function Projects() {
                         <Image
                             src="/projects/myp-min.png"
                             alt="phi"
-                            boxSize="100%"
+                            boxSize="300px"
                             maxW="500px"
                         />
                         <Box
@@ -266,7 +266,7 @@ function Projects() {
                         <Image
                             src="/projects/hsc-min.png"
                             alt="phi"
-                            boxSize="100%"
+                            boxSize="300px"
                             maxW="500px"
                         />
                         <Box
@@ -320,7 +320,7 @@ function Projects() {
                         <Image
                             src="/projects/pal-min.png"
                             alt="pal"
-                            boxSize="100%"
+                            boxSize="300px"
                             maxW="500px"
                         />
                         <Box
@@ -374,7 +374,7 @@ function Projects() {
                         <Image
                             src="/projects/cfy-min.png"
                             alt="cfy"
-                            boxSize="100%"
+                            boxSize="300px"
                             maxW="500px"
                         />
                         <Box
