@@ -81,7 +81,12 @@ function Projects() {
                 <Text fontSize="2xl" fontWeight="bold">
                     What I Built
                 </Text>
-                <SimpleGrid columns={{ base: 1, sm: 1, md: 2 }} spacing={5} width="100%" height="100%">
+                <SimpleGrid
+                    columns={{ base: 1, sm: 1, md: 2 }}
+                    spacing={5}
+                    width="100%"
+                    maxHeight="fit-content"
+                >
                     <Box
                         marginTop="1rem"
                         borderRadius="lg"
@@ -214,7 +219,6 @@ function Projects() {
                             alt="phi"
                             width="100%"
                             maxW="500px"
-                           
                         />
                         <Box
                             display={panchangaIsVisible ? "block" : "none"}
