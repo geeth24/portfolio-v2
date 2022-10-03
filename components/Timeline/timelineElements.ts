@@ -1,11 +1,11 @@
 let timelineElements = [
     {
         id: 6,
-        title: "Frontend Web Developer Intern for Pista House Texas",
+        title: "Front-End Web Developer for Pista House Irving",
         location: "Irving, Texas",
         description:
-            "I am working for Pista House Texas as a Frontend Web Developer Intern. I am currently developing  a Next.js website using Chakra UI for Pista House Texas.",
-        buttonText: "View Pista House Texas",
+            "Developed a responsive web application using Next.js and TypeScript. Created a website for users to view Pista House’s dine-in and catering menu, the catering setup layout gallery, and integrated WhatsApp business chat to enable users to order their desired items.",
+        buttonText: "View Pista House Irving",
         buttonLink: "https://pistahouseirving.com/",
         date: "May 2022 - Present",
         icon: "work",
@@ -26,7 +26,7 @@ let timelineElements = [
         title: "iOS Developer for Rad Soft, Inc",
         location: "Coppell, Texas",
         description:
-            "I working for Rad Soft, Inc. as a iOS Developer. Built a responsive lunar calendar iOS app called MyPanchang with over 900+ downloads using Swift to view the three elements things in the Hindu calendar.",
+            "Analyzed a real-world problem and developed a responsive iOS Application as a solution using SwiftUI. Created a lunar calendar mobile application that requests lunar data from a backend server and displays it on the app and widget for users to view the data quicker. Released for free on the AppStore, with over 1000 Downloads since launch.",
         buttonText: "View MyPanchang",
         buttonLink: "https://mypanchang.app/",
         date: "March 2021 - July 2021",

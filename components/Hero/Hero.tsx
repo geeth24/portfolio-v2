@@ -164,7 +164,7 @@ const Hero = () => {
                                         textAlign={["center", "center", "left"]}
                                         mt={-10}
                                     >
-                                        Rising freshman at The University of
+                                        Freshman at The University of
                                         Texas at Dallas, experience in modern
                                         programming languages like Swift,
                                         JavaScript & Python

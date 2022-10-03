@@ -19,6 +19,7 @@ import {
     SiTwitter,
     SiFramer,
 } from "react-icons/si"
+import {RiPagesLine } from "react-icons/ri"
 import { animateScroll } from "react-scroll"
 const Logo = () => {
     const scrolToTop = () => {
@@ -141,6 +142,12 @@ export default function Footer() {
                             href={"https://instagram.com/geeth.tsx/"}
                         >
                             <SiInstagram />
+                        </SocialButton>
+                        <SocialButton
+                            label={"Resume"}
+                            href={"/Resume Oct.pdf"}
+                        >
+                            <RiPagesLine />
                         </SocialButton>
                     </Stack>
                 </Container>
