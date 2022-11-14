@@ -101,7 +101,7 @@ export default function Contact() {
                                 )}
                                 shadow="base"
                             >
-                                <VStack spacing={5}>
+                                <VStack spacing={5} color={color}>
                                     <FormControl isRequired>
                                         <FormLabel>Name</FormLabel>
 
