@@ -18,8 +18,9 @@ import {
     SiNextdotjs,
     SiTwitter,
     SiFramer,
+    SiGithub,
 } from "react-icons/si"
-import {RiPagesLine } from "react-icons/ri"
+import { RiPagesLine } from "react-icons/ri"
 import { animateScroll } from "react-scroll"
 const Logo = () => {
     const scrolToTop = () => {
@@ -124,6 +125,12 @@ export default function Footer() {
                     <Text>© {new Date().getFullYear()} Geeth Gunnampalli</Text>
                     <Stack direction={"row"} spacing={6}>
                         <SocialButton
+                            label={"GitHub"}
+                            href={"https://github.com/thetechie7"}
+                        >
+                            <SiGithub />
+                        </SocialButton>
+                        <SocialButton
                             label={"Twitter"}
                             href={"https://twitter.com/GGunnampalli"}
                         >
@@ -143,10 +150,7 @@ export default function Footer() {
                         >
                             <SiInstagram />
                         </SocialButton>
-                        <SocialButton
-                            label={"Resume"}
-                            href={"/Resume Oct.pdf"}
-                        >
+                        <SocialButton label={"Resume"} href={"/Resume Oct.pdf"}>
                             <RiPagesLine />
                         </SocialButton>
                     </Stack>

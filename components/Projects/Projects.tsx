@@ -20,6 +20,8 @@ function Projects() {
     const bgOnHover = useColorModeValue("#347fdbac", "#a8c8f0ac")
 
     const [pistaIsVisible, setPistaIsVisible] = useState(false)
+    const [reactiveIsVisible, setReactiveIsVisible] = useState(false)
+    const [pistaIsVisible2, setPistaIsVisible2] = useState(false)
     const [infinityIsVisible, setInfinityIsVisible] = useState(false)
     const [panchangaIsVisible, setPanchangaIsVisible] = useState(false)
     const [hsconnectIsVisible, setHsconnectIsVisible] = useState(false)
@@ -31,6 +33,19 @@ function Projects() {
     }
     function pistaOut() {
         setPistaIsVisible(false)
+    }
+    function reactiveOver() {
+        setReactiveIsVisible(true)
+    }
+    function reactiveOut() {
+        setReactiveIsVisible(false)
+    }
+
+    function pistaOver2() {
+        setPistaIsVisible2(true)
+    }
+    function pistaOut2() {
+        setPistaIsVisible2(false)
     }
     function infinityOver() {
         setInfinityIsVisible(true)
@@ -87,6 +102,116 @@ function Projects() {
                     width="100%"
                     maxHeight="fit-content"
                 >
+                    <Box
+                        marginTop="1rem"
+                        borderRadius="lg"
+                        boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
+                        backgroundColor={cardBg}
+                        _hover={{
+                            boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.252)",
+                            transform: "scale(1.05)",
+                            transition: "all 0.5s ease-in-out",
+                        }}
+                        transition="all 0.5s ease-in-out"
+                        borderColor={color}
+                        borderWidth="3px"
+                        borderStyle="solid"
+                        onMouseOver={pistaOver2}
+                        onMouseOut={pistaOut2}
+                        position="relative"
+                    >
+                        <Image
+                            src="/projects/pe-min.png"
+                            alt="pe"
+                            width="100%"
+                            maxW="500px"
+                        />
+                        <Box
+                            display={pistaIsVisible2 ? "block" : "none"}
+                            position="absolute"
+                            bottom="0"
+                            left="0"
+                            right="0"
+                            backgroundColor={bgOnHover}
+                            p={5}
+                            color={colorOnHover}
+                            fontSize="lg"
+                            fontWeight="bold"
+                            transition="all 0.5s ease-in-out"
+                        >
+                            <Box mb={2}>
+                                <HStack spacing={5}>
+                                    <Text fontSize="2xl" fontWeight="bold">
+                                        Pista Express
+                                    </Text>
+                                    <Button
+                                        as={Link}
+                                        href="https://pistaexpress.com"
+                                        isExternal
+                                        colorScheme="brand"
+                                        size="sm"
+                                    >
+                                        Visit
+                                    </Button>
+                                </HStack>
+                            </Box>
+                        </Box>
+                    </Box>
+                    <Box
+                        marginTop="1rem"
+                        borderRadius="lg"
+                        boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
+                        backgroundColor={cardBg}
+                        _hover={{
+                            boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.252)",
+                            transform: "scale(1.05)",
+                            transition: "all 0.5s ease-in-out",
+                        }}
+                        transition="all 0.5s ease-in-out"
+                        borderColor={color}
+                        borderWidth="3px"
+                        borderStyle="solid"
+                        onMouseOver={reactiveOver}
+                        onMouseOut={reactiveOut}
+                        position="relative"
+                    >
+                        <Image
+                            src="/projects/rs-min.png"
+                            alt="pe"
+                            width="100%"
+                            maxW="500px"
+                        />
+                        <Box
+                            display={reactiveIsVisible ? "block" : "none"}
+                            position="absolute"
+                            bottom="0"
+                            left="0"
+                            right="0"
+                            backgroundColor={bgOnHover}
+                            p={5}
+                            color={colorOnHover}
+                            fontSize="lg"
+                            fontWeight="bold"
+                            transition="all 0.5s ease-in-out"
+                        >
+                            <Box mb={2}>
+                                <HStack spacing={5}>
+                                    <Text fontSize="2xl" fontWeight="bold">
+                                        Reactive Shots
+                                    </Text>
+                                    <Button
+                                        as={Link}
+                                        href="https://reactiveshots.com"
+                                        isExternal
+                                        colorScheme="brand"
+                                        size="sm"
+                                    >
+                                        Visit
+                                    </Button>
+                                </HStack>
+                            </Box>
+                        </Box>
+                    </Box>
                     <Box
                         marginTop="1rem"
                         borderRadius="lg"

@@ -63,7 +63,11 @@ const Hero = () => {
         return () => clearTimeout(intervalId)
     }, [])
 
-    const text = ["A Front-End Web Developer", "An iOS App Developer", "A Python Developer"]
+    const text = [
+        "A Front-End Web Developer",
+        "An iOS App Developer",
+        "A Python Developer",
+    ]
     const bg = useColorModeValue(
         "linear-gradient(to bottom, #347fdb, #F7FAFC)",
         "linear-gradient(to bottom, #347fdb, #1a202c)"
@@ -164,10 +168,10 @@ const Hero = () => {
                                         textAlign={["center", "center", "left"]}
                                         mt={-10}
                                     >
-                                        Freshman at The University of
-                                        Texas at Dallas, experience in modern
-                                        programming languages like Swift,
-                                        JavaScript & Python
+                                        Freshman at The University of Texas at
+                                        Dallas, experience in modern programming
+                                        languages like Swift, JavaScript &
+                                        Python
                                     </Text>
                                 </VStack>
                             </Flex>
@@ -184,6 +188,7 @@ const Hero = () => {
                                         "right",
                                     ]}
                                     align={["center", "center", "right"]}
+                                    display={["none", "none", "block"]}
                                 />
                             </Flex>
                         </SimpleGrid>

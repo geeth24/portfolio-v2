@@ -18,7 +18,7 @@ const Home = () => {
         setTimeout(() => {
             if (window.pageYOffset > 0) {
             } else {
-                animateScroll.scrollTo(800, { duration: 1000 })
+                animateScroll.scrollTo(700, { duration: 1000 })
             }
         }, 5000)
     }, [])

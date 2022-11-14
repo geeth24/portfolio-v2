@@ -27,7 +27,13 @@ interface Props {
     colorSchemeButton: boolean
     isOpen: boolean
 }
-export const MenuItem = ({ id, toggle, tab, colorSchemeButton, isOpen }: Props) => {
+export const MenuItem = ({
+    id,
+    toggle,
+    tab,
+    colorSchemeButton,
+    isOpen,
+}: Props) => {
     const { colorMode, toggleColorMode } = useColorMode()
     const color = useColorModeValue("#347fdb", "#a8c8f0")
 
@@ -41,7 +47,7 @@ export const MenuItem = ({ id, toggle, tab, colorSchemeButton, isOpen }: Props) 
                 alignItems: "center",
                 justifyContent: "center",
                 color: color,
-                pointerEvents: `${isOpen ? "all" : "none"}`, 
+                pointerEvents: `${isOpen ? "all" : "none"}`,
             }}
         >
             {colorSchemeButton ? (
@@ -49,7 +55,13 @@ export const MenuItem = ({ id, toggle, tab, colorSchemeButton, isOpen }: Props) 
                     Toggle {colorMode === "light" ? "Dark" : "Light"}
                 </div>
             ) : (
-                <Link to={id} spy={true} smooth={true} duration={500}>
+                <Link
+                    to={id}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                >
                     <div onClick={toggle}>{tab}</div>
                 </Link>
             )}
