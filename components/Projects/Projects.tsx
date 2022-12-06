@@ -101,6 +101,7 @@ function Projects() {
                                 key={index}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.8 }}
                                 transition={{ delay: index * 0.1 }}
                             >
                                 {char}
@@ -115,6 +116,7 @@ function Projects() {
                                 key={index}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.8 }}
                                 transition={{ delay: index * 0.1 }}
                             >
                                 {char}
@@ -132,6 +134,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -190,6 +193,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -248,6 +252,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -306,6 +311,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -363,6 +369,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -420,6 +427,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -477,6 +485,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -534,6 +543,7 @@ function Projects() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"

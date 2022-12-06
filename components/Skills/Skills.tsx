@@ -49,6 +49,7 @@ function Skills() {
                                 key={index}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.8 }}
                                 transition={{ delay: index * 0.1 }}
                             >
                                 {char}
@@ -63,6 +64,7 @@ function Skills() {
                                 key={index}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.8 }}
                                 transition={{ delay: index * 0.1 }}
                             >
                                 {char}
@@ -75,6 +77,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -105,6 +108,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -135,6 +139,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -165,6 +170,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -195,6 +201,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -225,6 +232,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -255,6 +263,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -285,6 +294,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -315,6 +325,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -345,6 +356,7 @@ function Skills() {
                         as={motion.div}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.8 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"

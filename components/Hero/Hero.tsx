@@ -143,10 +143,12 @@ const Hero = () => {
                                 <Image
                                     as={motion.img}
                                     initial={{ opacity: 0, x: -100 }}
-                                    animate={{ opacity: 1, x: 0 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true, amount: 0.8 }}
+                                    transition="linear 0.5s"
                                     src="/CircleGG.png"
                                     alt="Geeth"
-                                    height={{ base: "250px", md: "600px" }}
+                                    height={{ base: "250px", md: "550px" }}
                                     width={{ base: "100%", md: "100%" }}
                                     objectFit="contain"
                                     objectPosition={[
@@ -182,7 +184,7 @@ const Hero = () => {
                                                     initial={{ opacity: 0 }}
                                                     animate={{ opacity: 1 }}
                                                     transition={{
-                                                        delay: index * 0.1,
+                                                        delay: index * 0.03,
                                                     }}
                                                 >
                                                     {char}
@@ -202,7 +204,7 @@ const Hero = () => {
                                                     initial={{ opacity: 0 }}
                                                     animate={{ opacity: 1 }}
                                                     transition={{
-                                                        delay: index * 0.1,
+                                                        delay: index * 0.05,
                                                     }}
                                                 >
                                                     {char}
