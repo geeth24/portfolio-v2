@@ -9,7 +9,7 @@ export default class Document extends NextDocument {
                 <Head>
                     {" "}
                     <meta charSet="utf-8" />
-                    <link rel="icon" href="/memoji3.png" />
+                    <link rel="icon" href="/CircleGG.png" />
                     <link
                         rel="preconnect"
                         href="https://fonts.googleapis.com"
@@ -19,12 +19,12 @@ export default class Document extends NextDocument {
                         href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
                         rel="stylesheet"
                     />
-                    <link rel="apple-touch-icon" href="/memoji3.png" />
+                    <link rel="apple-touch-icon" href="/IMG_0793.JPG" />
                     <meta property="og:title" content="Geeth Gunnampalli" />
                     <meta
                         name="image"
                         property="og:image"
-                        content="/memoji3.png"
+                        content="/IMG_0793.JPG"
                     />
                     <meta name="author" content="Geeth Gunnampalli" />
                     <meta

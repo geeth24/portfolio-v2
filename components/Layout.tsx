@@ -1,44 +1,46 @@
-import React, { Suspense } from "react"
+import React from "react"
 import ScrollToTop from "./ScrollToTop"
-import { Flex, Spinner, useColorModeValue } from "@chakra-ui/react"
-import dynamic from "next/dynamic"
-// import Navbar from "./Navbar/Navbar"
-// import Footer from "./Footer/Footer"
+import { useColorModeValue } from "@chakra-ui/react"
+// import dynamic from "next/dynamic"
+import MobileMenu from "./MobileMenu/MobileMenu"
+import Footer from "./Footer/Footer"
+import Navbar from "./Navbar/Navbar"
 
 type LayoutProps = {
     children: React.ReactNode
 }
 
-const Navbar = dynamic(() => import("./Navbar/Navbar"), {
-    suspense: true,
-})
-const Footer = dynamic(() => import("./Footer/Footer"), {
-    suspense: true,
-})
+// const MobileMenu = dynamic(() => import("./MobileMenu/MobileMenu"), {
+//     suspense: true,
+// })
+// const Footer = dynamic(() => import("./Footer/Footer"), {
+//     suspense: true,
+// })
 
 const Layout = ({ children }: LayoutProps) => {
     const colorMode = useColorModeValue("white", "rgb(26 32 44)")
 
-    const renderLoader = () => (
-        <Flex justifyContent="center" alignItems="center" height="100vh">
-            <Spinner size="xl" thickness="4px" speed="0.65s" color="#347fdb" />
-        </Flex>
-    )
+    // const renderLoader = () => (
+    //     <Flex justifyContent="center" alignItems="center" height="100vh">
+    //         <Spinner size="xl" thickness="4px" speed="0.65s" color="#347fdb" />
+    //     </Flex>
+    // )
 
     return (
         <>
-            <Suspense fallback={renderLoader()}>
-                <div
-                    style={{
-                        backgroundColor: colorMode,
-                    }}
-                >
-                    <ScrollToTop />
-                    <Navbar />
-                    {children}
-                    <Footer />
-                </div>
-            </Suspense>
+            {/* <Suspense fallback={renderLoader()}> */}
+            <div
+                style={{
+                    backgroundColor: colorMode,
+                }}
+            >
+                <ScrollToTop />
+                <MobileMenu />
+                <Navbar />
+                {children}
+                <Footer />
+            </div>
+            {/* </Suspense> */}
         </>
     )
 }

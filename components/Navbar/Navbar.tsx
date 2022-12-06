@@ -1,64 +1,157 @@
-import * as React from "react"
-import { useRef } from "react"
-import { motion, useCycle } from "framer-motion"
-import { useDimensions } from "./use-dimensions"
-import { MenuToggle } from "./MenuToggle"
-import { Navigation } from "./Navigation"
-import { useColorModeValue } from "@chakra-ui/react"
+import {
+    useColorModeValue,
+    chakra,
+    Flex,
+    HStack,
+    Button,
+    IconButton,
+    useColorMode,
+} from "@chakra-ui/react"
+import React from "react"
+import { BsMoon, BsSun } from "react-icons/bs"
+import { Link } from "react-scroll"
 
-const sidebar = {
-    open: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-        transition: {
-            type: "spring",
-            stiffness: 20,
-            restDelta: 2,
-        },
-    }),
-    closed: {
-        clipPath: "circle(30px at 40px 40px)",
-        transition: {
-            delay: 0.5,
-            type: "spring",
-            stiffness: 400,
-            damping: 40,
-        },
-    },
-}
-
-const Navbar = () => {
-    const [isOpen, toggleOpen] = useCycle(false, true)
-    const containerRef = useRef(null)
-    const { height } = useDimensions(containerRef)
+function Navbar() {
     const bg = useColorModeValue("#ffffffb8", "#1a202cb8")
-    return (
-        <motion.nav
-            initial={false}
-            animate={isOpen ? "open" : "closed"}
-            custom={height}
-            ref={containerRef}
-        >
-            <motion.div
-                className="background"
-                variants={sidebar}
-                style={{
-                    background: bg,
+    const { colorMode, toggleColorMode } = useColorMode()
 
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    zIndex: -1,
-                    overflow: "hidden",
-                    width: "300px",
-                    backdropFilter: "saturate(180%) blur(50px)",
-                    WebkitBackdropFilter: "saturate(180%) blur(50px)",
-                }}
-            />
-            <Navigation toggle={() => toggleOpen()} isOpen={isOpen} />
-            <MenuToggle toggle={() => toggleOpen()} />
-        </motion.nav>
+    return (
+        <chakra.header
+            bg={bg}
+            w="full"
+            px={{
+                base: 2,
+                sm: 4,
+            }}
+            py={4}
+            shadow="md"
+            mt={-70}
+            position="sticky"
+            top={0}
+            zIndex={10}
+            style={{
+                backdropFilter: "saturate(180%) blur(50px)",
+                WebkitBackdropFilter: "saturate(180%) blur(50px)",
+            }}
+            display={{
+                base: "none",
+                md: "block",
+            }}
+        >
+            <Flex
+                alignItems="center"
+                justifyContent="space-between"
+                mx="auto"
+                maxW="5xl"
+            >
+                <Flex>
+                    <chakra.h1
+                        as={Link}
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                        fontSize="xl"
+                        fontWeight="bold"
+                        ml="2"
+                        style={{
+                            cursor: "pointer",
+                        }}
+                        color={colorMode === "light" ? "brand.500" : "white"}
+                    >
+                        Geeth
+                    </chakra.h1>
+                </Flex>
+                <Flex>
+                    <HStack spacing={4} mr={1} color="brand.500">
+                        <Button
+                            as={Link}
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                            width={100}
+                            variant="ghost"
+                            fontSize="md"
+                            cursor="pointer"
+                        >
+                            Home
+                        </Button>
+                        <Button
+                            as={Link}
+                            to="timeline"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                            width={100}
+                            variant="ghost"
+                            fontSize="md"
+                            cursor="pointer"
+                        >
+                            Timeline
+                        </Button>
+                        <Button
+                            as={Link}
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                            width={100}
+                            variant="ghost"
+                            fontSize="md"
+                            cursor="pointer"
+                        >
+                            Skills
+                        </Button>
+                        <Button
+                            as={Link}
+                            to="projects"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-70}
+                            width={100}
+                            variant="ghost"
+                            fontSize="md"
+                            cursor="pointer"
+                        >
+                            Projects
+                        </Button>
+                    </HStack>
+                </Flex>
+                <Flex>
+                    <Button
+                        as={Link}
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                        width={100}
+                        variant="solid"
+                        fontSize="md"
+                        cursor="pointer"
+                        color={colorMode === "light" ? "brand.500" : "white"}
+                    >
+                        Contact
+                    </Button>
+                    <IconButton
+                        aria-label="Toggle Dark Switch"
+                        mt={-18}
+                        mr={6}
+                        onClick={toggleColorMode}
+                        color={colorMode === "light" ? "brand.500" : "white"}
+                        width={10}
+                    >
+                        {colorMode === "light" ? <BsMoon /> : <BsSun />}
+                    </IconButton>
+                </Flex>
+            </Flex>
+        </chakra.header>
     )
 }
 

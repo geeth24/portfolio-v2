@@ -15,6 +15,7 @@ import {
     VStack,
 } from "@chakra-ui/react"
 import axios from "axios"
+import { motion } from "framer-motion"
 import React from "react"
 import { BsPerson } from "react-icons/bs"
 import { MdOutlineEmail } from "react-icons/md"
@@ -83,6 +84,10 @@ export default function Contact() {
                                 base: "4xl",
                                 md: "5xl",
                             }}
+                            as={motion.div}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            
                         >
                             Get in Touch
                         </Heading>
@@ -100,6 +105,9 @@ export default function Contact() {
                                     "whiteAlpha.900"
                                 )}
                                 shadow="base"
+                                as={motion.div}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                             >
                                 <VStack spacing={5} color={color}>
                                     <FormControl isRequired>

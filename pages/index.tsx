@@ -2,7 +2,7 @@ import { useColorModeValue } from "@chakra-ui/react"
 import Head from "next/head"
 import Hero from "../components/Hero/Hero"
 
-import Navbar from "../components/Navbar/Navbar"
+import MobileMenu from "../components/MobileMenu/MobileMenu"
 import Projects from "../components/Projects/Projects"
 import Skills from "../components/Skills/Skills"
 import Timeline from "../components/Timeline/Timeline"
@@ -31,7 +31,7 @@ const Home = () => {
             <Head>
                 <title>Home | Geeth</title>
             </Head>
-            <Navbar />
+            <MobileMenu />
             <Hero />
             <Timeline />
             <Skills />

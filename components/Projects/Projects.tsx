@@ -9,6 +9,7 @@ import {
     HStack,
     Button,
 } from "@chakra-ui/react"
+import { motion } from "framer-motion"
 import React, { useState } from "react"
 
 function Projects() {
@@ -78,6 +79,9 @@ function Projects() {
         setCoppellIsVisible(false)
     }
 
+    const title = "Projects"
+    const subtitle = "What I Built"
+
     return (
         <Flex
             direction="column"
@@ -91,10 +95,32 @@ function Projects() {
         >
             <Flex align="flex-start" justify="center" direction="column" p={5}>
                 <Text fontSize="6xl" fontWeight="bold" mb={5}>
-                    Projects
+                    {title.split("").map((char, index) => {
+                        return (
+                            <motion.span
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                            >
+                                {char}
+                            </motion.span>
+                        )
+                    })}
                 </Text>
                 <Text fontSize="2xl" fontWeight="bold">
-                    What I Built
+                    {subtitle.split("").map((char, index) => {
+                        return (
+                            <motion.span
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                            >
+                                {char}
+                            </motion.span>
+                        )
+                    })}
                 </Text>
                 <SimpleGrid
                     columns={{ base: 1, sm: 1, md: 2 }}
@@ -103,6 +129,9 @@ function Projects() {
                     maxHeight="fit-content"
                 >
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -158,6 +187,9 @@ function Projects() {
                         </Box>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -213,6 +245,9 @@ function Projects() {
                         </Box>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -268,6 +303,9 @@ function Projects() {
                         </Box>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -322,6 +360,9 @@ function Projects() {
                         </Box>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -376,6 +417,9 @@ function Projects() {
                         </Box>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -430,6 +474,9 @@ function Projects() {
                         </Box>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"
@@ -484,6 +531,9 @@ function Projects() {
                         </Box>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         borderRadius="lg"
                         boxShadow="0px 0px 10px rgba(0, 0, 0, 0.252)"

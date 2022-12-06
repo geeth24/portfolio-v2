@@ -6,6 +6,7 @@ import {
     Text,
     useColorModeValue,
 } from "@chakra-ui/react"
+import { motion } from "framer-motion"
 import React from "react"
 import {
     SiCss3,
@@ -25,6 +26,10 @@ function Skills() {
     const cardBg = useColorModeValue("#ffffff", "gray.800")
     const nextDotJsColor = useColorModeValue("#000", "#fff")
     const color = useColorModeValue("brand.500", "brand.200")
+
+    const title = "Skills"
+    const subtitle = "What I know"
+
     return (
         <Flex
             direction="column"
@@ -34,17 +39,42 @@ function Skills() {
             bg={bgColor}
             margin="0 auto"
             id="skills"
-            pb={{base: "10", md: "0"}}
+            pb={{ base: "10", md: "0" }}
         >
             <Flex align="flex-start" justify="center" direction="column" p={5}>
                 <Text fontSize="6xl" fontWeight="bold" mb={5}>
-                    Skills
+                    {title.split("").map((char, index) => {
+                        return (
+                            <motion.span
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                            >
+                                {char}
+                            </motion.span>
+                        )
+                    })}
                 </Text>
                 <Text fontSize="2xl" fontWeight="bold">
-                    What I know
+                    {subtitle.split("").map((char, index) => {
+                        return (
+                            <motion.span
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                            >
+                                {char}
+                            </motion.span>
+                        )
+                    })}
                 </Text>
                 <SimpleGrid columns={{ base: 2, md: 4, lg: 5 }} spacing={5}>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -72,6 +102,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -99,6 +132,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -126,6 +162,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -153,6 +192,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -180,6 +222,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -207,6 +252,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -234,6 +282,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -261,6 +312,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"
@@ -288,6 +342,9 @@ function Skills() {
                         </VStack>
                     </Box>
                     <Box
+                        as={motion.div}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         marginTop="1rem"
                         p={10}
                         borderRadius="lg"

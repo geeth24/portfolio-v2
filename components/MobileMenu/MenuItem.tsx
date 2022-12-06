@@ -37,13 +37,23 @@ export const MenuItem = ({
     const { colorMode, toggleColorMode } = useColorMode()
     const color = useColorModeValue("#347fdb", "#a8c8f0")
 
+    var displayValue
+    if (isOpen) {
+        displayValue = "flex"
+    } else {
+        //wait for animation to finish
+        setTimeout(() => {
+            displayValue = "block"
+        }, 500)
+    }
+
     return (
         <motion.li
             variants={variants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             style={{
-                display: "flex",
+                display: `${displayValue}`,
                 alignItems: "center",
                 justifyContent: "center",
                 color: color,

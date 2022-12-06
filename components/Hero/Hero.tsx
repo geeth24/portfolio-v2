@@ -12,6 +12,7 @@ import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import { Engine } from "tsparticles-engine"
 import TextTransition, { presets } from "react-text-transition"
+import { motion } from "framer-motion"
 
 const options = {
     fullScreen: { enable: false, zIndex: -1 },
@@ -72,6 +73,11 @@ const Hero = () => {
         "linear-gradient(to bottom, #347fdb, #F7FAFC)",
         "linear-gradient(to bottom, #347fdb, #1a202c)"
     )
+
+    const text1 = "Hi, I'm"
+    const name = "Geeth"
+    const text2 =
+        " Freshman at The University of Texas at Dallas, experience in modern programming languages like Swift, JavaScript &  Python"
     return (
         <>
             <Box
@@ -120,10 +126,40 @@ const Hero = () => {
                         {" "}
                         <SimpleGrid
                             columns={{ base: 1, md: 2 }}
+                            //reverse the order of the grid
+                            flexDirection={{
+                                base: "column-reverse",
+                                md: "row",
+                            }}
                             spacing={0}
                             width="100%"
                             maxWidth="7xl"
                         >
+                            <Flex
+                                justifyContent="center"
+                                alignItems="center"
+                                overflow="hidden"
+                            >
+                                <Image
+                                    as={motion.img}
+                                    initial={{ opacity: 0, x: -100 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    src="/CircleGG.png"
+                                    alt="Geeth"
+                                    height={{ base: "250px", md: "600px" }}
+                                    width={{ base: "100%", md: "100%" }}
+                                    objectFit="contain"
+                                    objectPosition={[
+                                        "center",
+                                        "center",
+                                        "right",
+                                    ]}
+                                    align={["center", "center", "right"]}
+                                    display={["block", "block", "block"]}
+                                    overflow="hidden"
+                                />
+                            </Flex>
+
                             <Flex
                                 justifyContent="center"
                                 alignItems="center"
@@ -139,14 +175,40 @@ const Hero = () => {
                                         fontWeight="bold"
                                         color="#ffffffce"
                                     >
-                                        Hi, I&apos;m
+                                        {text1.split("").map((char, index) => {
+                                            return (
+                                                <motion.span
+                                                    key={index}
+                                                    initial={{ opacity: 0 }}
+                                                    animate={{ opacity: 1 }}
+                                                    transition={{
+                                                        delay: index * 0.1,
+                                                    }}
+                                                >
+                                                    {char}
+                                                </motion.span>
+                                            )
+                                        })}
                                     </Text>
                                     <Text
                                         fontSize={["6xl", "7xl", "8xl"]}
                                         fontWeight="bold"
                                         color="white"
                                     >
-                                        Geeth
+                                        {name.split("").map((char, index) => {
+                                            return (
+                                                <motion.span
+                                                    key={index}
+                                                    initial={{ opacity: 0 }}
+                                                    animate={{ opacity: 1 }}
+                                                    transition={{
+                                                        delay: index * 0.1,
+                                                    }}
+                                                >
+                                                    {char}
+                                                </motion.span>
+                                            )
+                                        })}
                                     </Text>
                                     {/* //@ts-ignore */}
 
@@ -168,28 +230,22 @@ const Hero = () => {
                                         textAlign={["center", "center", "left"]}
                                         mt={-10}
                                     >
-                                        Freshman at The University of Texas at
-                                        Dallas, experience in modern programming
-                                        languages like Swift, JavaScript &
-                                        Python
+                                        {text2.split("").map((char, index) => {
+                                            return (
+                                                <motion.span
+                                                    key={index}
+                                                    initial={{ opacity: 0 }}
+                                                    animate={{ opacity: 1 }}
+                                                    transition={{
+                                                        delay: index * 0.01,
+                                                    }}
+                                                >
+                                                    {char}
+                                                </motion.span>
+                                            )
+                                        })}
                                     </Text>
                                 </VStack>
-                            </Flex>
-                            <Flex justifyContent="center" alignItems="center">
-                                <Image
-                                    src="/memoji3.png"
-                                    alt="Geeth"
-                                    height={{ base: "250px", md: "600px" }}
-                                    width={{ base: "100%", md: "100%" }}
-                                    objectFit="contain"
-                                    objectPosition={[
-                                        "center",
-                                        "center",
-                                        "right",
-                                    ]}
-                                    align={["center", "center", "right"]}
-                                    display={["none", "none", "block"]}
-                                />
                             </Flex>
                         </SimpleGrid>
                     </Box>

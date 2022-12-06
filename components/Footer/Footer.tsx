@@ -150,7 +150,10 @@ export default function Footer() {
                         >
                             <SiInstagram />
                         </SocialButton>
-                        <SocialButton label={"Resume"} href={"/Resume Oct.pdf"}>
+                        <SocialButton
+                            label={"Resume"}
+                            href={"/Geeth Gunnampalli.pdf.pdf"}
+                        >
                             <RiPagesLine />
                         </SocialButton>
                     </Stack>
