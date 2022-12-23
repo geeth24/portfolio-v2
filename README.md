@@ -1,5 +1,6 @@
 
-![Logo](https://geethg.com/CircleGG.png){ width=50% }
+<img src="https://geethg.com/CircleGG.png" height="60" width="60" >
+
 
 
 # Portfolio V2
