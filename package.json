@@ -12,6 +12,8 @@
     "@chakra-ui/react": "^2.2.3",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@splinetool/react-spline": "^2.2.5",
+    "@splinetool/runtime": "^0.9.150",
     "axios": "^0.27.2",
     "framer-motion": "^6.4.3",
     "next": "12.2.2",

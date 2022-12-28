@@ -22,7 +22,7 @@ function Timeline() {
                 overflow: "hidden",
             }}
         >
-            <VerticalTimeline animate={true} lineColor={color}>
+            <VerticalTimeline animate={false} lineColor={color}>
                 {timelineElements.map((element) => {
                     let isWorkIcon = element.icon === "work"
                     let showButton =

@@ -89,7 +89,7 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             
                         >
-                            Get in Touch
+                            Contact Me
                         </Heading>
 
                         <Stack
