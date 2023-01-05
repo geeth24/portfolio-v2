@@ -31,6 +31,8 @@ const MobileMenu = () => {
     const containerRef = useRef(null)
     const { height } = useDimensions(containerRef)
     const bg = useColorModeValue("#ffffffb8", "#1a202cb8")
+
+    
     return (
         <chakra.nav
             as={motion.nav}

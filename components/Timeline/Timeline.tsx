@@ -11,8 +11,8 @@ import { motion } from "framer-motion"
 
 function Timeline() {
     const bg = useColorModeValue("#fff", "#171923")
-    const color = useColorModeValue("#347fdb", "#7fafe8")
-    let workIconStyles = { background: "#347fdb", color: "#fff" }
+    const color = useColorModeValue("#3182CE", "#7fafe8")
+    let workIconStyles = { background: "#3182CE", color: "#fff" }
     let schoolIconStyles = { background: "#7fafe8", color: "#fff" }
 
     return (
@@ -23,7 +23,7 @@ function Timeline() {
             }}
         >
             <VerticalTimeline animate={false} lineColor={color}>
-                {timelineElements.map((element) => {
+                {timelineElements.map((element, index) => {
                     let isWorkIcon = element.icon === "work"
                     let showButton =
                         element.buttonText !== undefined &&
@@ -35,7 +35,7 @@ function Timeline() {
                             //@ts-ignore
 
                             id={`${element.id}`}
-                            key={element.id}
+                            key={index}
                             date={element.date}
                             dateClassName="date"
                             //@ts-ignore
@@ -70,7 +70,7 @@ function Timeline() {
                                 <p id="description">{element.description}</p>
                                 {showButton && (
                                     <Button
-                                        colorScheme="brand"
+                                        colorScheme="blue"
                                         width="fit-content"
                                         as={Link}
                                         href={element.buttonLink}

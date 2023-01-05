@@ -9,22 +9,22 @@ export default class Document extends NextDocument {
                 <Head>
                     {" "}
                     <meta charSet="utf-8" />
-                    <link rel="icon" href="/CircleGG.png" />
+                    <link rel="icon" href="/CircleGGUTD.png" />
                     <link
                         rel="preconnect"
                         href="https://fonts.googleapis.com"
                     />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
                         rel="stylesheet"
                     />
-                    <link rel="apple-touch-icon" href="/IMG_0793.JPG" />
+                    <link rel="apple-touch-icon" href="/CircleGGUTD.png" />
                     <meta property="og:title" content="Geeth Gunnampalli" />
                     <meta
                         name="image"
                         property="og:image"
-                        content="/IMG_0793.JPG"
+                        content="/CircleGGUTD.png"
                     />
                     <meta name="author" content="Geeth Gunnampalli" />
                     <meta

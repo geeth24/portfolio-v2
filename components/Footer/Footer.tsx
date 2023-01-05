@@ -36,10 +36,10 @@ const Logo = () => {
                 }}
             >
                 <Image
-                    src="/memoji3.png"
-                    alt="Memoji"
-                    width="75px"
-                    height="75px"
+                    src="/CircleGGUTD.png"
+                    alt="Geeth"
+                    width={75}
+                    height={75}
                 />
             </div>
         </>
@@ -82,7 +82,7 @@ export default function Footer() {
     return (
         <Box
             bg={useColorModeValue("gray.200", "gray.900")}
-            color={useColorModeValue("brand.500", "brand.200")}
+            color={useColorModeValue("blue.500", "blue.200")}
         >
             <Container
                 as={Stack}
@@ -152,7 +152,7 @@ export default function Footer() {
                         </SocialButton>
                         <SocialButton
                             label={"Resume"}
-                            href={"/Geeth Gunnampalli.pdf.pdf"}
+                            href={"/Geeth Gunnampalli.pdf"}
                         >
                             <RiPagesLine />
                         </SocialButton>

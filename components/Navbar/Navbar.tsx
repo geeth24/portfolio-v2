@@ -52,15 +52,13 @@ function Navbar() {
                             style={{
                                 cursor: "pointer",
                             }}
-                            color={
-                                colorMode === "light" ? "brand.500" : "white"
-                            }
+                            color={colorMode === "light" ? "blue.500" : "white"}
                         >
                             Geeth
                         </chakra.h1>
                     </Flex>
                     <Flex>
-                        <HStack spacing={4} mr={1} color="brand.500">
+                        <HStack spacing={4} mr={1} color="blue.500">
                             <Button
                                 as={Link}
                                 to="home"
@@ -131,9 +129,7 @@ function Navbar() {
                             variant="solid"
                             fontSize="md"
                             cursor="pointer"
-                            color={
-                                colorMode === "light" ? "brand.500" : "white"
-                            }
+                            color={colorMode === "light" ? "blue.500" : "white"}
                         >
                             Contact
                         </Button>
@@ -142,9 +138,7 @@ function Navbar() {
                             mt={-18}
                             mr={6}
                             onClick={toggleColorMode}
-                            color={
-                                colorMode === "light" ? "brand.500" : "white"
-                            }
+                            color={colorMode === "light" ? "blue.500" : "white"}
                             width={10}
                         >
                             {colorMode === "light" ? <BsMoon /> : <BsSun />}

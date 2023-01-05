@@ -35,17 +35,19 @@ export const MenuItem = ({
     isOpen,
 }: Props) => {
     const { colorMode, toggleColorMode } = useColorMode()
-    const color = useColorModeValue("#347fdb", "#a8c8f0")
+    const color = useColorModeValue("#3182CE", "#90CDF4")
 
-    var displayValue
-    if (isOpen) {
-        displayValue = "flex"
-    } else {
-        //wait for animation to finish
-        setTimeout(() => {
-            displayValue = "block"
-        }, 500)
-    }
+    const [display, setDisplay] = React.useState("none")
+
+    React.useEffect(() => {
+        if (!isOpen) {
+            setTimeout(() => {
+                setDisplay("none")
+            }, 500)
+        } else {
+            setDisplay("flex")
+        }
+    }, [isOpen])
 
     return (
         <motion.li
@@ -53,7 +55,7 @@ export const MenuItem = ({
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             style={{
-                display: `${displayValue}`,
+                display: `${display}`,
                 alignItems: "center",
                 justifyContent: "center",
                 color: color,

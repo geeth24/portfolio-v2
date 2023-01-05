@@ -9,7 +9,7 @@ const Path = (
     <motion.path
         fill="transparent"
         strokeWidth="3"
-        stroke={useColorModeValue("#347fdb", "#a8c8f0")}
+        stroke={useColorModeValue("#3182CE", "#a8c8f0")}
         strokeLinecap="round"
         {...props}
     />

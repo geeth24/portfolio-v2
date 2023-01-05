@@ -4,7 +4,7 @@ import {
     Flex,
     FormControl,
     FormLabel,
-    Heading,
+    Text,
     Input,
     InputGroup,
     InputLeftElement,
@@ -28,7 +28,7 @@ export default function Contact() {
     const [message, setMessage] = React.useState("")
     const [isSubmitting, setIsSubmitting] = React.useState(false)
     const toast = useToast()
-    const color = useColorModeValue("#347fdb", "#7fafe8")
+    const color = useColorModeValue("#3182CE", "#7fafe8")
 
     const handleSubmit = async (e: { preventDefault: () => void }) => {
         e.preventDefault()
@@ -79,18 +79,16 @@ export default function Contact() {
             >
                 <Box>
                     <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
-                        <Heading
-                            fontSize={{
-                                base: "4xl",
-                                md: "5xl",
-                            }}
+                        <Text
+                            fontSize="6xl"
+                            fontWeight="bold"
+                            mb={5}
                             as={motion.div}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            
                         >
                             Contact Me
-                        </Heading>
+                        </Text>
 
                         <Stack
                             spacing={{ base: 4, md: 8, lg: 20 }}
@@ -164,7 +162,7 @@ export default function Contact() {
                                     </FormControl>
 
                                     <Button
-                                        colorScheme="brand"
+                                        colorScheme="blue"
                                         width="full"
                                         variant="outline"
                                         size="sm"

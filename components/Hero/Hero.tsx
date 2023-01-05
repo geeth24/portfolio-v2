@@ -27,7 +27,7 @@ const options = {
             },
         },
         color: {
-            value: ["#F0FFFF", "#89CFF0", "#0000FF", "#00aeff", "#0096FF"],
+            value: ["#F0FFFF", "#90CDF4", "#0000FF", "#3182CE", "#0096FF"],
         },
         opacity: {
             value: 0.5,
@@ -45,7 +45,7 @@ const options = {
     },
 
     background: {
-        // image: "radial-gradient(#347fdb, ##1a202c)",
+        // image: "radial-gradient(#3182CE, ##1a202c)",
     },
     detectRetina: true,
 }
@@ -70,8 +70,8 @@ const Hero = () => {
         "A Python Developer",
     ]
     const bg = useColorModeValue(
-        "linear-gradient(to bottom, #347fdb, #F7FAFC)",
-        "linear-gradient(to bottom, #347fdb, #1a202c)"
+        "linear-gradient(to bottom, #3182CE, #F7FAFC)",
+        "linear-gradient(to bottom, #3182CE, #1a202c)"
     )
 
     const text1 = "Hi, I'm"
@@ -142,11 +142,11 @@ const Hero = () => {
                             >
                                 <Image
                                     as={motion.img}
-                                    initial={{ opacity: 0, x: -100 }}
+                                    initial={{ opacity: 0, x: -50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true, amount: 0.8 }}
                                     transition="linear 0.5s"
-                                    src="/CircleGG.png"
+                                    src="/CircleGGUTD.png"
                                     alt="Geeth"
                                     height={{ base: "250px", md: "550px" }}
                                     width={{ base: "100%", md: "100%" }}
