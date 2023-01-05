@@ -33,7 +33,7 @@ export const ProjectsData = [
         title: "Legal Dove",
         link: "https://legaldove.geethg.com/",
         image: "/projects/ld-min.png",
-        github: "https://github.com/thetechie7/InfinityLoopsBot",
+        github: "https://github.com/thetechie7/legaldove",
     },
     {
         title: "Infinity Loops Bot",
