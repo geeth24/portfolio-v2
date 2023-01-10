@@ -1,5 +1,11 @@
 export const ProjectsData = [
     {
+        title: "Dumka Calgary",
+        link: "https://dumkacalgary.com/",
+        image: "/projects/dc-min.png",
+        github: "https://github.com/thetechie7/dumka-calgary",
+    },
+    {
         title: "JumpStarterX (Unreleased)",
         link: "https://jumpstarterx.com/",
         image: "/projects/jsx-min.png",
