@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/github",
+            "destination": "https://github.com/thetechie7",
+            "statusCode": 301
+        }
+    ]
+}
